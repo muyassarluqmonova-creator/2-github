@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #0077ff;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== BO'LIMLAR (SECTION) ===== */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Har bir bo‘limni kartaga o‘xshatish */
+.card {
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== SERVICES ===== */
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-box {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Har bo‘limga yumshoq fon farqi */
+#home {
+        padding: 500px;    
+    background: #f5f7fa;
+}
+
+#about {
+        padding: 500px;
+    background: #eef3ff;
+}
+
+#services {
+        padding: 500px;
+    background: #f9f9f9;
+}
+
+#contact {
+    padding: 500px;
+    background: #eef7ff;
+}
+
+/* ===== BUTTON ===== */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+nav a.active {
+    color: #0077ff;
+    font-weight: 700;
+}
+
+img{
+    margin-bottom: 30px;
+}
